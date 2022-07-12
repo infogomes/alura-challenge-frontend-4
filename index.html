@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,25 +13,28 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <img src="assets/img/casa.svg" alt="Casa">
-            <img class="header__icon-mensagens" src="assets/img/mensagens.svg" alt="Mensagens">
-        </nav>
-        <div class="header__logo">
-            <img src="assets/img/logo-white.svg" alt="Logo">
-            <h2 class="header__logo__texto">Boas-vindas!</h2>
-        </div>
-    </header>
-    <img class="imagem-lateral" src="assets/img/img-right.svg" alt="">
-    <main class="main">
-        <p class="main__text">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
-        <a href="" class="button">Já tem uma conta</a>
-        <a href="" class="button">Quero de cadastrar</a>
-        <img src="assets/img/img-dogs.svg" alt="Imagens cachorros" class="main__image">
-    </main>
+    <div class="container bg-blue bg-image-top pb-0">
+        <header class="header">
+            <nav>
+                <a href="index.html"><img src="assets/img/casa.svg" alt="Casa"></a>
+                <a href="#"><img class="header__icon-mensagens" src="assets/img/mensagens.svg"
+                        alt="Mensagens"></a>
+            </nav>
+        </header>
+        <img class="imagem-lateral" src="assets/img/img-right.svg" alt="">
+        <main class="main-index">
+            <section class="main-index__logo">
+                <img src="assets/img/logo-white.svg" alt="Logo">
+                <h2 class="main-index__logo__texto">Boas-vindas!</h2>
+            </section>
+            <p class="main-index__text">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
+            <a href="#" class="button">Já tem uma conta</a>
+            <a href="cadastro.html" class="button">Quero de cadastrar</a>
+            <img src="assets/img/img-dogs.svg" alt="Imagens cachorros" class="main-index__image">
+        </main>
+    </div>
     <footer class="footer">
-        <p>2022 - Desenvolvido por Alura.</p>
+        <p>2022 - Desenvolvido por Infogomes.</p>
     </footer>
 </body>
 
