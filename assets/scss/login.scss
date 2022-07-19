@@ -1,7 +1,7 @@
 @import 'base/reset';
 @import 'base/base';
 
-.main-cadastro {
+.main-login {
     @include main();
     padding: 0 1rem 3rem; 
 
@@ -11,6 +11,7 @@
 
         &__image {
             height: 34px;
+            margin-bottom: 3rem;
         }
     }
 
@@ -20,6 +21,10 @@
         font-size: 1rem;
         text-align: center;
         line-height: 1.3125rem;
+    }
+
+    &__form {
+        padding: 3rem 0 5rem;
     }
 
 }
