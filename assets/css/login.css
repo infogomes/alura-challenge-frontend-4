@@ -158,6 +158,9 @@ body {
   line-height: 1rem;
   color: #BCBCBC;
 }
+.input__link {
+  color: #737380;
+}
 
 .header__icon-mensagens {
   margin-left: 3rem;
@@ -169,46 +172,7 @@ body {
   background-color: #36D6AD;
 }
 
-.imagem-lateral {
-  position: absolute;
-  top: 11.875rem;
-  right: 0px;
-}
-
-.main-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-}
-.main-index__logo {
-  margin-top: 6.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-}
-.main-index__logo__texto {
-  color: white;
-  font-size: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.625rem;
-  line-height: 3rem;
-}
-.main-index__text {
-  margin-bottom: 1rem;
-  line-height: 1.5rem;
-  text-align: center;
-  padding: 0 1rem;
-}
-.main-index__image {
-  margin-bottom: -1.25rem;
-}
-
-.main-cadastro {
+.main-login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,22 +180,26 @@ body {
   overflow: hidden;
   padding: 0 1rem 3rem;
 }
-.main-cadastro__logo {
+.main-login__logo {
   margin-top: 6.25rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   margin-top: 3rem;
 }
-.main-cadastro__logo__image {
+.main-login__logo__image {
   height: 34px;
+  margin-bottom: 3rem;
 }
-.main-cadastro__texto {
+.main-login__texto {
   padding: 0 0.5rem;
   color: #3772FF;
   font-size: 1rem;
   text-align: center;
   line-height: 1.3125rem;
 }
+.main-login__form {
+  padding: 3rem 0 5rem;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=login.css.map */

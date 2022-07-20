@@ -1,0 +1,86 @@
+@import 'base/reset';
+@import 'base/base';
+
+.main-animais {
+    @include main();
+    padding: 0 1rem 3rem; 
+
+    &__logo {
+        @include mainLogo();
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        line-height: 1.25rem;
+    }
+
+    &__texto {
+        padding: 0 3.5rem;
+        color: #3772FF;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.3125rem;
+    }
+
+    &__card {
+        display: flex;
+        background-color: white;
+
+        &__img {
+            width: 40%;
+            padding: 1rem;
+        }
+
+        &__content {
+            width: 60%;
+            padding: 1rem;
+            text-align: left;
+        }
+        
+        &__title {
+            font-weight: 600;
+            color: #3772FF;
+            margin-bottom: 0.875rem;
+        }
+
+        &__info {
+            font-size: 0.875rem;
+            color: #737380;
+            margin-bottom: 2rem;
+        }
+
+        &__address {
+            font-size: 0.75rem;
+            color: #737380;
+            margin-bottom: 0.5rem;
+        }
+
+        &__msg {
+
+            &__icon {
+                margin-right: 0.625rem;
+            }
+
+            display: flex;
+            align-items: center;
+            font-size: 0.625rem;
+            color: #737380;
+        }
+    }
+
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .main-animais {
+        &__logo {
+            margin-top: 5.25rem;
+
+            br {
+                display: inline !important;
+            }
+        }
+
+        &__list-cards {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+}

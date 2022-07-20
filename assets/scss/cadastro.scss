@@ -1,0 +1,25 @@
+@import 'base/reset';
+@import 'base/base';
+
+.main-cadastro {
+    @include main();
+    padding: 0 1rem 3rem; 
+
+    &__logo {
+        @include mainLogo();
+        margin-top: 3rem;
+
+        &__image {
+            height: 34px;
+        }
+    }
+
+    &__texto {
+        padding: 0 0.5rem;
+        color: #3772FF;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.3125rem;
+    }
+
+}
