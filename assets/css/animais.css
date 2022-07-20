@@ -214,6 +214,8 @@ body {
   flex-direction: column;
   justify-items: center;
   margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.25rem;
 }
 .main-animais__texto {
   padding: 0 3.5rem;
@@ -221,6 +223,56 @@ body {
   font-size: 1rem;
   text-align: center;
   line-height: 1.3125rem;
+}
+.main-animais__card {
+  display: flex;
+  background-color: white;
+}
+.main-animais__card__img {
+  width: 40%;
+  padding: 1rem;
+}
+.main-animais__card__content {
+  width: 60%;
+  padding: 1rem;
+  text-align: left;
+}
+.main-animais__card__title {
+  font-weight: 600;
+  color: #3772FF;
+  margin-bottom: 0.875rem;
+}
+.main-animais__card__info {
+  font-size: 0.875rem;
+  color: #737380;
+  margin-bottom: 2rem;
+}
+.main-animais__card__address {
+  font-size: 0.75rem;
+  color: #737380;
+  margin-bottom: 0.5rem;
+}
+.main-animais__card__msg {
+  display: flex;
+  align-items: center;
+  font-size: 0.625rem;
+  color: #737380;
+}
+.main-animais__card__msg__icon {
+  margin-right: 0.625rem;
+}
+
+@media screen and (min-width: 576px) {
+  .main-animais__logo {
+    margin-top: 5.25rem;
+  }
+  .main-animais__logo br {
+    display: inline !important;
+  }
+  .main-animais__list-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 /*# sourceMappingURL=animais.css.map */
