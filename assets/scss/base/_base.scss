@@ -142,6 +142,10 @@ body {
     &__nav {
         display: flex;
         align-items: center;
+
+        &__usuario {
+            margin-left: auto;
+        }
     }
 
     &__logo {
@@ -174,7 +178,7 @@ body {
     :root {
         font-size: 18px;
     }
- 
+
     .bg-image-top {
         background-size: 70%;
     }
