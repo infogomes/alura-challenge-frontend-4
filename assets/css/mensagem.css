@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #3772FF;
+}
+
+.bg-light-grey {
+  background-color: #F6F6F6;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.bg-image-top {
+  background-image: url("../img/img-top.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bg-images {
+  background-image: url("../img/img-paws-cat.svg"), url("../img/img-top.svg"), url("../img/img-left.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0%, top left, 0% 23rem;
+  background-size: 40%, 90%, 20%;
+}
+
+.container {
+  padding: 3rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-color-blue {
+  color: #3772FF;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  width: 11.25rem;
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #FC7071;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: #FC7071;
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+.button:hover {
+  background-color: #FF9D9E;
+}
+
+.input {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem auto;
+}
+.input__label {
+  display: block;
+  color: #737380;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.input__box {
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  background: #F7F7F7;
+  border: 1px solid #F7F7F7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  width: 100%;
+  padding-left: 1rem;
+}
+.input__textarea {
+  box-sizing: border-box;
+  display: block;
+  background: #F7F7F7;
+  border: 1px solid #F7F7F7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  width: 100%;
+  padding: 1rem;
+}
+.input::placeholder {
+  font-weight: 400;
+  font-size: 1.33rem;
+  line-height: 1rem;
+  color: #BCBCBC;
+}
+.input__link {
+  color: #737380;
+}
+
+.header__icon-mensagens {
+  margin-left: 3rem;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav__usuario {
+  margin-left: auto;
+}
+.header__logo {
+  display: none;
+}
+
+.footer {
+  padding: 2.5rem 2.5rem;
+  text-align: center;
+  background-color: #36D6AD;
+}
+
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 18px;
+  }
+  .bg-image-top {
+    background-size: 70%;
+  }
+  .header__logo {
+    display: inline;
+  }
+}
+.main-mensagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 1rem 3rem;
+}
+.main-mensagem__logo {
+  margin-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.25rem;
+}
+.main-mensagem__texto {
+  padding: 2rem 3.5rem 0;
+  color: #3772FF;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.3125rem;
+}
+.main-mensagem__form {
+  background: #F7F7F7;
+  border-radius: 10px;
+  margin: 0 2rem 0 2rem;
+  padding: 0 2rem 0 2rem;
+  box-sizing: border-box;
+}
+.main-mensagem__label {
+  text-align: start;
+  font-weight: 600;
+  color: #3772FF;
+}
+
+@media screen and (min-width: 576px) {
+  .main-mensagem__logo {
+    margin-top: 5.25rem;
+  }
+  .main-mensagem__logo br {
+    display: inline !important;
+  }
+}
+
+/*# sourceMappingURL=mensagem.css.map */
