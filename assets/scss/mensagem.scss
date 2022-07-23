@@ -1,0 +1,49 @@
+@import 'base/reset';
+@import 'base/base';
+
+.main-mensagem {
+    @include main();
+    padding: 0 1rem 3rem;
+
+    &__logo {
+        @include mainLogo();
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        line-height: 1.25rem;
+    }
+
+    &__texto {
+        padding: 2rem 3.5rem 0;
+        color: #3772FF;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.3125rem;
+    }
+
+    &__form {
+        background: #F7F7F7;
+        border-radius: 10px;
+        margin: 0 2rem 0 2rem;
+        padding: 0 2rem 0 2rem;
+        box-sizing: border-box;
+    }
+
+    &__label {
+        text-align: start;
+        font-weight: 600;
+        color: #3772FF;
+    }
+
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .main-mensagem {
+        &__logo {
+            margin-top: 5.25rem;
+
+            br {
+                display: inline !important;
+            }
+        }
+    }
+}
