@@ -157,7 +157,17 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   width: 100%;
-  text-align: center;
+  padding-left: 1rem;
+}
+.input__textarea {
+  box-sizing: border-box;
+  display: block;
+  background: #F7F7F7;
+  border: 1px solid #F7F7F7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  width: 100%;
+  padding: 1rem;
 }
 .input::placeholder {
   font-weight: 400;
@@ -200,7 +210,7 @@ body {
     display: inline;
   }
 }
-.main-animais {
+.main-home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,7 +218,7 @@ body {
   overflow: hidden;
   padding: 0 1rem 3rem;
 }
-.main-animais__logo {
+.main-home__logo {
   margin-top: 6.25rem;
   display: flex;
   flex-direction: column;
@@ -217,62 +227,62 @@ body {
   margin-bottom: 2rem;
   line-height: 1.25rem;
 }
-.main-animais__texto {
-  padding: 0 3.5rem;
+.main-home__texto {
+  padding: 2rem 3.5rem 0;
   color: #3772FF;
   font-size: 1rem;
   text-align: center;
   line-height: 1.3125rem;
 }
-.main-animais__card {
+.main-home__card {
   display: flex;
   background-color: white;
 }
-.main-animais__card__img {
+.main-home__card__img {
   width: 40%;
   padding: 1rem;
 }
-.main-animais__card__content {
+.main-home__card__content {
   width: 60%;
   padding: 1rem;
   text-align: left;
 }
-.main-animais__card__title {
+.main-home__card__title {
   font-weight: 600;
   color: #3772FF;
   margin-bottom: 0.875rem;
 }
-.main-animais__card__info {
+.main-home__card__info {
   font-size: 0.875rem;
   color: #737380;
   margin-bottom: 2rem;
 }
-.main-animais__card__address {
+.main-home__card__address {
   font-size: 0.75rem;
   color: #737380;
   margin-bottom: 0.5rem;
 }
-.main-animais__card__msg {
+.main-home__card__msg {
   display: flex;
   align-items: center;
   font-size: 0.625rem;
   color: #737380;
 }
-.main-animais__card__msg__icon {
+.main-home__card__msg__icon {
   margin-right: 0.625rem;
 }
 
 @media screen and (min-width: 576px) {
-  .main-animais__logo {
+  .main-home__logo {
     margin-top: 5.25rem;
   }
-  .main-animais__logo br {
+  .main-home__logo br {
     display: inline !important;
   }
-  .main-animais__list-cards {
+  .main-home__list-cards {
     display: grid;
     grid-template-columns: auto auto;
   }
 }
 
-/*# sourceMappingURL=animais.css.map */
+/*# sourceMappingURL=home.css.map */
